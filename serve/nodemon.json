@@ -1,5 +1,19 @@
 {
     "execMap": {
         "js": "sucrase-node"
-    }
-}
+    },
+    "restartable": "rs",
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules"
+    ],
+    "verbose": true,
+    "watch": [
+      "view"
+
+    ],
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "ext": "js json html"
+  }
